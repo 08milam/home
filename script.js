@@ -17,3 +17,16 @@
 
 
 
+
+    var targetElement = document.querySelector(".navbar");
+    var halfwayPoint = window.innerHeight / 2;
+    window.onscroll = function() {
+      var scrollPosition = window.scrollY;
+      if (scrollPosition >= halfwayPoint) {
+        targetElement.style.backgroundColor = "rgba(23, 23, 23, 0.9)"; 
+        // targetElement.style.backdropFilter = "blur(10px)";
+      } else {
+        targetElement.style.backgroundColor = "transparent";
+        // targetElement.style.backdropFilter = "transparent";
+      }
+    };
