@@ -1,162 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Profile</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="navbar">
-        <nav>
-            <div class="navbar-sub-container">
-            <!-- <button class="navbar-link">Badges</button>
-            <button class="navbar-link">linkedin</button>
-            <button class="navbar-link">Projects</button> -->
-            <a class="navbar-link" href="https://www.linkedin.com/in/matthewmilam/" target="_blank">linkedin</a>
-            <a class="navbar-link" href="https://08milam.github.io/projects/" target="_blank">Projects</a>
-            <a class="navbar-link" href="https://08milam.github.io/badges/" target="_blank">Badges</a>
-            <a class="navbar-link" href="https://github.com/08milam" target="_blank">Github</a>
-            <a class="navbar-link" href="mailto:08milam@gmail.com">E-mail</a>
-            </div>
-        </nav>
+      <nav>
+        <div class="navbar-sub-container">
+          <ul class="sidebar">
+            <li>
+              <a id="hidesidebar" href="#"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24"
+                  viewBox="0 -960 960 960"
+                  width="24"
+                >
+                  <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"fill="#FFFFFF"/></svg></a>
+            </li>
+            <li></li>
+            <li>
+              <a
+                class="navbar-link"
+                href="https://08milam.github.io/badges/"
+                target="_blank"
+                >Certifications</a
+              >
+            </li>
+            <li>
+              <a
+                class="navbar-link"
+                href="https://08milam.github.io/projects/"
+                target="_blank"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                class="navbar-link"
+                href="https://github.com/08milam"
+                target="_blank"
+                >Github</a
+              >
+            </li>
+            <li>
+              <a
+                class="navbar-link"
+                href="https://www.linkedin.com/in/matthewmilam/"
+                target="_blank"
+                >linkedin</a
+              >
+            </li>
+            <li>
+              <a class="navbar-link" href="mailto:08milam@gmail.com">E-mail</a>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <img class="profileImage" src="profile-image.png" alt="profile image" />
+            </li>
+            <li>
+              <a
+                class="hideOnSMScreen"
+                href="https://08milam.github.io/badges/"
+                target="_blank"
+                >Certifications</a
+              >
+            </li>
+            <li>
+              <a
+                class="hideOnSMScreen"
+                href="https://08milam.github.io/projects/"
+                target="_blank"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                class="hideOnSMScreen"
+                href="https://github.com/08milam"
+                target="_blank"
+                >Github</a
+              >
+            </li>
+            <li>
+              <a
+                class="hideOnSMScreen"
+                href="https://www.linkedin.com/in/matthewmilam/"
+                target="_blank"
+                >linkedin</a
+              >
+            </li>
+            <li>
+              <a class="hideOnSMScreen" href="mailto:08milam@gmail.com"
+                >E-mail</a
+              >
+            </li>
+            <li>
+              <a id="showmenu" href="#"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24"
+                  viewBox="0 -960 960 960"
+                  width="24"
+                >
+                  <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" fill="#FFFFFF"/></svg></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
-<div class="backgroundlayerone">  <!-- background layer one -->
-    <div class="backgroundlayertwo"><!-- background layer tow -->
-            <div class="image-container"><!-- image container -->
-                <img class="image" src="profile-image.png" alt="">
-                <h1 class="name">Matthew Milam</h1>
-            </div><!-- image container end -->
-        <div class="container-content"><!-- container content all content -->
-<!-- ********************************************************* -->
-            <div class="wrapper"><!-- wrpper 1 -->
-                    <div class="content"><!-- content about me, work history -->
-                        <h2>About me</h2><!-- about me -->
-                        <p>
-                            I am currently enrolled in Auburn University on June 5 2024, will be graduating as a computer software engineer.
-                            Here are the courses I am taking.
-                        </p>
-                        <ul>
-                            <li>Web Development Fundamentals</li>
-                            <li>Intermediate JavaScript</li>
-                            <li>DOM Manipulation</li>
-                            <li>Event Driven Programming</li>
-                            <li>Developer Fundamentals (Git/Terminal/Github)</li>
-                            <li>Modern JavaScript and Testing</li>
-                            <li>How the Web Works, AJAX, and jQuery</li>
-                            <li>Python Fundamentals</li>
-                            <li>Flask Fundamentals</li>
-                            <li>SQL and PostgresQL</li>
-                            <li>Node and Express Fundamentals</li>
-                            <li>Building Full Stack Applications with Node and Express</li>
-                            <li>ReactJS Fundamentals</li>
-                            <li>Intermediate ReactJS</li>
-                            <li>Redux</li>
-                            <li>Data Structures and Algorithms</li>
-                            <li>AI for Engineers: Prompt Engineering</li>
-                        </ul>
-                    </div><!-- about me end -->
-                    <div class="content"> <!-- work history -->
-                        <h2>Work history</h2>
-                        <ul>
-                            <li>Machinist
-                                Madix, Inc
-                                Oct 2021 - Apr 2022 (7 months)</li>
-                            <li>Lead setup technician
-                                Madix, Inc
-                                Feb 2019 - Oct 2021 (2 years 9 months)</li>
-                            <li>Setup technician
-                                Madix, Inc
-                                Jul 2018 - Feb 2019 (8 months)</li>
-                            <li>400 Ton operator
-                                Madix, Inc
-                                Feb 2017 - Jul 2018 (1 year 6 months)</li>
-                            <li>Setup technician
-                                Madix, Inc
-                                May 2016 - Feb 2017 (10 months)</li>
-                            <li>400 Ton operator
-                                Madix, Inc
-                                Oct 2014 - May 2016 (1 year 8 months)
-                                Using 400 ton press you need to know safety a</li>
-                            <li>Multi line Press Operator
-                                Madix, Inc
-                                Apr 2013 - Oct 2014 (1 year 7 months)</li>
-                            <li>Assembly Worker
-                                Madix, Inc
-                                Feb 2011 - Apr 2013 (2 years 3 months)</li>
-                            </ul>
-                    </div><!-- work history end -->
-                </div><!-- content about me, work history end -->
-<!-- ********************************************************* -->
-                <div class="wrapper"><!-- blog wrapper -->
-                    <div class="content"><!-- blog -->
-                        <h2>Blog post</h2>
-                        <p>
-                            FAQs, or Frequently Asked Questions, play a pivotal role in the realm of technology by serving as invaluable resources for users seeking swift and comprehensive answers to common queries. In the dynamic landscape of technology, where innovations and updates are frequent, FAQs act as a user-friendly guide, demystifying complex concepts and troubleshooting intricacies. These compiled lists of questions and answers not only enhance user experience but also contribute to the efficiency of technical support teams by preemptively addressing concerns. Technology FAQs often cover a spectrum of topics, ranging from product functionalities and troubleshooting tips to system requirements and software compatibility. Navigating these FAQs streamlines the user learning curve, empowering individuals to harness the full potential of technological advancements. Additionally, the iterative nature of FAQs reflects the collaborative and responsive ethos of the tech industry, ensuring that users are well-equipped to adapt to the ever-evolving digital landscape.
-                        </p>
-                    </div><!-- blog end -->
-                    <div class="content"><!-- links -->
-                        <h2>links</h2>
-                        <ul>
-                            <li>Comming soon</li>
-                            <li>Comming soon</li>
-                            <li>Comming soon</li>
-                            <li>Comming soon</li>
-                            <li>Comming soon</li>
-                            <li>Comming soon</li>
-                            <li>Comming soon</li>
-                            <li>Comming soon</li>
-                            <li>Comming soon</li>
-                            <li>Comming soon</li>
-                            <li>Comming soon</li>
-                            <li>Comming soon</li>
-                        </ul>
-                    </div><!-- links end -->
-                    </div><!-- blog wapper end -->
-<!-- ********************************************************* -->
-                    <div class="wrapper"><!-- hobbies wrapper -->
-                        <div class="content"><!-- hobbies -->
-                            <h2>Hobbies</h2>
-                            <p>
-                                Engaging in the world of robotics as a hobby has proven to be an incredibly rewarding and intellectually stimulating pursuit. The fascination with robotics extends beyond the mechanical and electronic components, delving into the realms of programming, artificial intelligence, and problem-solving. Building and tinkering with robotic creations provides a hands-on experience that bridges theoretical knowledge with practical application. Whether it's constructing a simple robot that follows a predefined path or delving into the complexities of machine learning algorithms to enable more sophisticated behaviors, the hobby of robotics offers a continuous learning journey. The sense of accomplishment that comes with bringing a robot to life, coupled with the endless possibilities for innovation and creativity, fuels a passion that goes beyond mere technical proficiency. Robotics hobbyists often find themselves immersed in a dynamic community, sharing ideas, collaborating on projects, and contributing to the ever-evolving landscape of technological exploration. Overall, the hobby of robotics not only nurtures technical skills but also fosters a mindset of curiosity, perseverance, and an appreciation for the boundless potential of technology.
-                            </p>
-                        </div><!-- hobbies end -->
-                        <div class="content">
-                            <h1 class="name">Programming servo</h1>
-                            <img class="image" src="image2.JPG" alt="">
-                        </div>
-                    </div><!-- hobbies rapper end -->
-<!-- ********************************************************* -->
-                    <div class="wrapper"><!-- images wapper -->
-                        <div class="content">
-                            <h1 class="name">Milling aluminum</h1>
-                            <img class="image" src="image1.JPG" alt="">
-                        </div>
-                        <div class="content">
-                            <h1 class="name">Programming C32SR2</h1>
-                            <img class="image" src="image3.JPG" alt="">
-                        </div>
-                    </div><!-- images wrapper end -->
-        </div><!-- container content all content end -->
-    </div><!-- background layer two end -->
-</div><!-- background layer one end -->
-</body>
-<footer>
+
+    <div id="contentContainer">
+      <div id="seethrough"><h1>Matthew Milam</h1></div>
+      <hr>
+      <div class="content">
+        <h2>About me</h2>
+        <p>
+          I am currently enrolled in Auburn University on June 5 2024, will be
+          graduating as a computer software engineer. Here are the courses I am
+          taking.
+        </p>
+        <!-- about me -->
+        <div class="edlist">
+          <div class="list">
+            <ul>
+              <li>Web Development Fundamentals</li>
+              <li>Intermediate JavaScript</li>
+              <li>DOM Manipulation</li>
+              <li>Event Driven Programming</li>
+              <li>Developer Fundamentals (Git/Terminal/Github)</li>
+              <li>Modern JavaScript and Testing</li>
+              <li>How the Web Works, AJAX, and jQuery</li>
+              <li>Python Fundamentals</li>
+              <li>Flask Fundamentals</li>
+            </ul>
+          </div>
+          <div class="list">
+            <ul>
+              <li>SQL and PostgresQL</li>
+              <li>Node and Express Fundamentals</li>
+              <li>Building Full Stack Applications with Node and Express</li>
+              <li>ReactJS Fundamentals</li>
+              <li>Intermediate ReactJS</li>
+              <li>Redux</li>
+              <li>Data Structures and Algorithms</li>
+              <li>AI for Engineers: Prompt Engineering</li>
+            </ul>
+          </div><!-- list -->
+        </div><!-- edlist -->
+      </div><!-- content -->
+        <!-- work history -->
+      <div class="content">
+        <h2>Work history</h2>
+        <div class="edlist">
+          <div class="list">
+            <ul>
+              <li>Machinist Madix, Inc Oct 2021 - Apr 2022 (7 months)</li>
+              <li>
+                Lead setup technician Madix, Inc Feb 2019 - Oct 2021 (2 years 9
+                months)
+              </li>
+              <li>
+                Setup technician Madix, Inc Jul 2018 - Feb 2019 (8 months)
+              </li>
+              <li>
+                400 Ton operator Madix, Inc Feb 2017 - Jul 2018 (1 year 6
+                months)
+              </li>
+              <li>
+                Setup technician Madix, Inc May 2016 - Feb 2017 (10 months)
+              </li>
+              <li>
+                400 Ton operator Madix, Inc Oct 2014 - May 2016 (1 year 8
+                months) Using 400 ton press you need to know safety a
+              </li>
+              <li>
+                Multi line Press Operator Madix, Inc Apr 2013 - Oct 2014 (1 year
+                7 months)
+              </li>
+              <li>
+                Assembly Worker Madix, Inc Feb 2011 - Apr 2013 (2 years 3
+                months)
+              </li>
+            </ul>
+          </div><!-- list -->
+        </div><!-- edlist -->
+      </div><!-- content -->
+      <!-- blog -->
+      <div class="content">
+        <h2>Blog</h2>
+        <div class="edlist">
+          <div class="list">
+              <ul>
+                <li>SOMMING SOON</li>
+                <li>SOMMING SOON</li>
+                <li>SOMMING SOON</li>
+                <li>SOMMING SOON</li>
+                <li>SOMMING SOON</li>
+                <li>SOMMING SOON</li>
+                <li>SOMMING SOON</li>
+                <li>SOMMING SOON</li>
+              </ul>
+            </div><!-- list -->
+
+          </div><!-- edlist -->
+        </div><!-- content -->
+                <!-- work history -->
+      <div class="content">
+        <h2>Hobbies</h2>
+        <div class="edlist">
+          <div class="list">
+            <div>
+            <p>
+              Engaging in the world of robotics as a hobby has proven to be an incredibly rewarding and intellectually stimulating pursuit. The fascination with robotics extends beyond the mechanical and electronic components, delving into the realms of programming, artificial intelligence, and problem-solving. Building and tinkering with robotic creations provides a hands-on experience that bridges theoretical knowledge with practical application. Whether it's constructing a simple robot that follows a predefined path or delving into the complexities of machine learning algorithms to enable more sophisticated behaviors, the hobby of robotics offers a continuous learning journey. The sense of accomplishment that comes with bringing a robot to life, coupled with the endless possibilities for innovation and creativity, fuels a passion that goes beyond mere technical proficiency. Robotics hobbyists often find themselves immersed in a dynamic community, sharing ideas, collaborating on projects, and contributing to the ever-evolving landscape of technological exploration. Overall, the hobby of robotics not only nurtures technical skills but also fosters a mindset of curiosity, perseverance, and an appreciation for the boundless potential of technology.
+          </p>
+            </div>
+          </div><!-- list -->
+        </div><!-- edlist -->
+      </div><!-- content -->
+      <div class="contenta">
+            <div>
+              <h3 class="name">Programming servo</h3>
+              <img class="image" src="image2.JPG" alt="Programming servo">
+            </div>
+            <div>
+              <h3 class="name">Programming C32SR2</h3>
+              <img class="image" src="image3.JPG" alt="Programming C32SR2">
+            </div>
+            <div>
+              <h3 class="name">Milling aluminum</h3>
+              <img class="image" src="image1.JPG" alt="Milling aluminum">
+            </div>
+      </div><!-- content -->
+      <div class="content">
+        <!-- <h2>Hobbies</h2> -->
+        <div class="edlist">
+          <div class="list">
+            <div>
+              <hr>
+            <h3 class="quote">
+              "I&#39;ve missed more than 9,000 shots in my career. I&#39;ve lost almost 300 games. Twenty-six times I&#39;ve been trusted to take the game-winning shot and missed. I&#39;ve failed over and over and over again in my life. And that is why I succeed." — <strong>Michael Jordan</strong> 
+            </h3>
+            </div>
+          </div><!-- list -->
+        </div><!-- edlist -->
+      </div><!-- content -->
+    </div><!-- contentContainer -->
+  </body>
+  <footer>
     <script src="script.js"></script>
-</footer>
+  </footer>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

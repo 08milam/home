@@ -1,32 +1,30 @@
-// function rotateElement(event) {
-//     const element = document.querySelector('.hover-element');
-//     const rect = element.getBoundingClientRect();
+document.addEventListener("DOMContentLoaded", function () {
+  const image = document.querySelector("img");
+  const profileImage = document.querySelector(".profileImage");
+  const navbar = document.querySelector(".navbar");
+  const sideMenu = document.querySelector("#showmenu");
+  const closeMenu = document.querySelector("#hidesidebar");
 
-//     // Calculate the angle of rotation based on mouse position
-//     const angleX = (event.clientY - rect.top - rect.height / 2) / (rect.height / 2) * 20;
-//     const angleY = (event.clientX - rect.left - rect.width / 2) / (rect.width / 2) * -20;
+  window.addEventListener("scroll", function () {
+    const scrollPosition = window.scrollY;
+    const opacity = 1 - scrollPosition / 10;
+    image.style.opacity = opacity;
 
-//     // Apply the rotation and tilt using CSS transform property
-//     element.style.transform = `rotateX(${angleX}deg) rotateY(${angleY}deg)`;
-// }
+    const halfwayPoint = window.innerHeight / 10;
+    if (scrollPosition >= halfwayPoint) {
+      navbar.style.backgroundColor = "rgba(52, 52, 52, 0.9)";
+    } else {
+      navbar.style.backgroundColor = "transparent";
+    }
+  });
 
-// // Reset the rotation when the mouse leaves the element
-// document.querySelector('.hover-element').onmouseleave = function () {
-//     this.style.transform = 'rotateX(0deg) rotateY(0deg)';
-// };
+  sideMenu.addEventListener("click", function () {
+    const sidebar = document.querySelector(".sidebar");
+    sidebar.style.display = "flex";
+  });
 
-
-
-
-    var targetElement = document.querySelector(".navbar");
-    var halfwayPoint = window.innerHeight / 2;
-    window.onscroll = function() {
-      var scrollPosition = window.scrollY;
-      if (scrollPosition >= halfwayPoint) {
-        targetElement.style.backgroundColor = "rgba(23, 23, 23, 0.9)"; 
-        // targetElement.style.backdropFilter = "blur(10px)";
-      } else {
-        targetElement.style.backgroundColor = "transparent";
-        // targetElement.style.backdropFilter = "transparent";
-      }
-    };
+  closeMenu.addEventListener("click", function () {
+    const hideMenu = document.querySelector(".sidebar");
+    hideMenu.style.display = "none";
+  });
+});
