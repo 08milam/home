@@ -79,7 +79,7 @@ img {
 
 /* Sidebar styles */
 .sidebar {
-  background-color: rgba(36, 36, 36, 0.476);
+  background-color: rgba(36, 36, 36, .876);
   position: fixed;
   top: 0;
   right: 0;
